@@ -35,6 +35,6 @@ app.get("/", function(req, res) {
     res.send("Hello! This is the timestamp microservice!")
 });
 
-app.listen(8000, function() {
+app.listen(process.env.IP, process.env.PORT, function() {
     console.log("Server has started!")
 })
